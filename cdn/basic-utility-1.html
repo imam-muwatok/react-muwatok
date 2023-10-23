@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                spacing: {
+                    '13': '3.25rem',
+                },
+                fontFamily: {
+                    'inter' : ['Inter']
+                },
+                colors : {
+                    'wpu' : '#bada55'
+                }
+               
+            }
+        }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* * {
+            border: 1px solid red;
+        }
+        section {
+            margin-bottom: 3rem;
+        } */
+    </style>
+</head>
+<body>
+    <h1 class="text-6xl font-bold text-center">Spacing, Sizing, <span class="bg-gradient-to-br bg-clip-text text-transparent from-blue-600 via-cyan-200 to-purple-400">Typography</span></h1>
+    <section class="bg-indigo-200">
+        <h1 class="text-center mt-13 text-2xl bg-gradient-to-tr from-cyan-400 via-pink-200 to-amber-200">Spacing</h1>
+        <div class="-ml-4">margin</div>
+        <div class="mx-4 my-13 bg-gradient-to-r from-indigo-500 to-cyan-400">padding</div>
+    </section>
+    <section class="bg-green-200">
+        <h1 class="text-center mt-13 text-2xl">Sizing</h1>
+        <div class="w-32 h-32 bg-wpu">kotak 1</div>
+        <div class="max-w-xs min-h-screen">kotak 2</div>
+
+    </section>
+    <section class="font-inter mx-4">
+        <h1 class="text-center mt-13 text-4xl font-bold py-2">Typography</h1>
+        <div class=" text-slate-500 py-2"><a class="text-slate-700">Muhammad Imam Muwatok</a> 29 Juni 2023</div>
+        <p>Lorem <a class="font-semibold underline">ipsum</a> dolor sit amet consectetur adipisicing elit. Vitae debitis provident alias delectus animi tempora a magnam aliquam libero dolor?</p>
+        <blockquote class="font-thin italic py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, atque!</blockquote>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem officia provident alias facere nulla beatae recusandae, accusantium ipsum asperiores, amet dolore, et laboriosam nobis perspiciatis libero nam nisi? Sit?</p>
+    </section>
+</body>
+</html>
